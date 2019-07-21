@@ -1,5 +1,5 @@
 import unittest
-
+import sys.setrecursionlimit(1500)
 
 from password_locker import User, Credential
 

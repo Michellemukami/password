@@ -1,5 +1,6 @@
 
 import random
+import sys.setrecursionlimit(1500)
 import string 
 
 
@@ -70,7 +71,7 @@ class Credential:
         chars = 'abcdefghijklmnopqrstuvwxyzABCDEFJHIJKLMNOPQRSTUVWXYZ1234567890'
         gen_pass = ''.join(random.sample(chars, 5))
         return gen_pass
-        
+
     @classmethod
     def display_credentials(cls, user_name):
         '''
