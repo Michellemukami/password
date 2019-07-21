@@ -39,7 +39,7 @@ class Credential:
     @classmethod
     def check_user(cls, first_name, password):
         '''
-        Method that checks if the name and password entered match entries in the users_list
+        Method that checks if the name and password entered match inputs in the users_list
         '''
         current_user = ''
         for user in User.users_list:
@@ -52,7 +52,6 @@ class Credential:
         Method to define the properties for each user object will hold.
         '''
 
-        # instance variables
         self.user_name = user_name
         self.site_name = site_name
         self.account_name = account_name
