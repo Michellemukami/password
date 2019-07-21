@@ -40,7 +40,7 @@ Password_Locker is a terminal run python application that allows users to store 
 ## Testing the Application
 * To run the tests for the class file:
 
-        $ python3.6 test_passlocker.py
+        $ python3.6 test_password.py
         
 ## Technologies Used
 * Python3.6
