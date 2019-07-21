@@ -64,14 +64,13 @@ class Credential:
     
         Credential.credentials_list.append(self)
     
+    
     @classmethod
-    def generate_password(size=7, char=string.ascii_uppercase+string.ascii_lowercase+string.digits):
-        '''
-        Function to generate an 8 character password for a credential
-        '''
-        gen_pass = ''.join(random.choice(char) for _ in(size))
+    def generate_Password():
+        chars = 'abcdefghijklmnopqrstuvwxyzABCDEFJHIJKLMNOPQRSTUVWXYZ1234567890'
+        gen_pass = ''.join(random.sample(chars, 5))
         return gen_pass
-
+        
     @classmethod
     def display_credentials(cls, user_name):
         '''

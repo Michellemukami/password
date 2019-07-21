@@ -28,7 +28,7 @@ def generate_password():
 	'''
 	Function to generate a password automatically
 	'''
-	gen_pass = Credential.generate_password()
+	gen_pass = generate_password()
 	return gen_pass
 
 def create_credential(user_name,site_name,account_name,password):
