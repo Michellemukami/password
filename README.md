@@ -18,12 +18,12 @@ Password_Locker is a terminal run python application that allows users to store 
 | Display prompt for which credential to copy | **Enter: V** | Enter the site name of the credential you wish to copy. |
 | Exit application | **Enter: X** | Exit the current navigation stage |
 
-## SetUp / Installation Requirements
-### Prerequisites
+## SetUp 
+
 * python3.7
 * pip
-* pyperclip
-* xclip
+
+
 
 ### Cloning
 * In your terminal:
