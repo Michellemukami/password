@@ -105,7 +105,7 @@ def main():
 						while True:
 							print(' ')
 							print("-"*20)
-							print('Please choose an option for entering a password: \n exist-enter existing password \n gene-generate a password \n X-exit')
+							print('Kindly choose an option for entering a password: \n exist-enter existing password \n gene-generate a password \n X-exit')
 							psw_choice = input('Your choice?: ').lower().strip()
 							print("-"*20)
 							if psw_choice == 'exist':

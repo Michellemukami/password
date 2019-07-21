@@ -1,5 +1,5 @@
 import unittest
-import pyperclip
+# import pyperclip
 
 from password_locker import User, Credential
 
@@ -62,14 +62,14 @@ class TestCredentials(unittest.TestCase):
         Function to create an account's credentials before each test
         '''
         self.new_credential = Credential(
-            'Gitau', 'Facebook', 'test', 'kamikaze99')
+            'Gitau', 'Linkin', 'test', 'kamikaze99')
 
     def test__init__(self):
         '''
         Test to if check the initialization/creation of credential instances is properly done
         '''
         self.assertEqual(self.new_credential.user_name, 'Gitau')
-        self.assertEqual(self.new_credential.site_name, 'Facebook')
+        self.assertEqual(self.new_credential.site_name, 'Linkin')
         self.assertEqual(self.new_credential.account_name, 'test')
         self.assertEqual(self.new_credential.password, 'kamikaze99')
 
@@ -110,22 +110,6 @@ class TestCredentials(unittest.TestCase):
         twitter.save_credentials()
         credential_exists = Credential.find_by_site_name('Twitter')
         self.assertEqual(credential_exists, twitter)
-
-    def test_copy_credential(self):
-        '''
-        Test to check if the copy a credential method copies the correct credential
-        '''
-        self.new_credential.save_credentials()
-        twitter = Credential('Gitau', 'Twitter', 'works', 'kamikaze99')
-        twitter.save_credentials()
-        find_credential = None
-        for credential in Credential.user_credentials_list:
-            find_credential = Credential.find_by_site_name(
-                credential.site_name)
-            return pyperclip.copy(find_credential.password)
-        Credential.copy_credential(self.new_credential.site_name)
-        self.assertEqual('kamikaze99', pyperclip.paste())
-        print(pyperclip.paste())
 
 
 if __name__ == '__main__':
