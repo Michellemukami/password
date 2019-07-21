@@ -1,6 +1,5 @@
 
 import random
-import sys.setrecursionlimit(1500)
 import string 
 
 

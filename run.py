@@ -1,6 +1,6 @@
 #! /usr/bin/env python3
 
-import sys.setrecursionlimit(1500)
+import sys
 from password_locker import User,Credential
 
 def create_user(fname,lname,password):
