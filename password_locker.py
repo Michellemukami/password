@@ -69,13 +69,13 @@ class Credential:
         '''
         Function to generate an 8 character password for a credential
         '''
-        gen_pass = ''.join(random.choice(char) for _ in range(size))
+        gen_pass = ''.join(random.choice(char) for _ in(size))
         return gen_pass
 
     @classmethod
     def display_credentials(cls, user_name):
         '''
-        Class method to display the list of credentials saved
+        Class method to display the list of credential saved
         '''
         user_credentials_list = []
         for credential in cls.credentials_list:
