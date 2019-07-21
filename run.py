@@ -1,6 +1,6 @@
 #! /usr/bin/env python3
 
-import pyperclip
+
 from password_locker import User,Credential
 
 def create_user(fname,lname,password):
