@@ -16,6 +16,11 @@ def save_user(user):
 	'''
 	User.save_user(user)
 
+def del_credential(contact):
+    '''
+    Function to delete a credential
+    '''
+    credential.delete_credentail()
 
 def verify_user(first_name,password):
 	'''
