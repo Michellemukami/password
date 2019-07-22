@@ -85,7 +85,7 @@ def main():
 				while True:
 					print("-"*50)
 					print('Navigation codes: \n cc-Create a Credential \n dc-Display Credentials \n copy-Copy Password \n ex-Exit')
-					short_code = input('Enter a choice: ').lower().strip()
+					short_code = input('Your choice?: ').lower().strip()
 					print("-"*50)
 					if short_code == 'ex':
 						print(" ")
@@ -93,7 +93,7 @@ def main():
 						break
 					elif short_code == 'cc':
 						print(' ')
-						print('Enter your credential details:')
+						print('Enter your credential information:')
 						site_name = input('Enter the site\'s name- ').strip()
 						account_name = input('Enter your account\'s name - ').strip()
 						while True:
