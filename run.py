@@ -135,7 +135,7 @@ def main():
 						copy_credential(chosen_site)
 						print('')
 					else:
-						print('Sorry!.Kindly Try again..')
+						print('Sorry!.Kindly Try again.')
 
 			else: 
 				print(' ')
