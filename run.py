@@ -99,8 +99,8 @@ def main():
 						while True:
 							print(' ')
 							print("-"*50)
-							print('Kindly note that this are the options password: \n ep-enter existing password \n gp-generate a password \n ex-exit')
-							psw_choice = input('Enter an option: ').lower().strip()
+							print('Kindly note that this are the options for your password: \n ep-enter existing password \n gp-generate a password \n ex-exit')
+							psw_choice = input('Your choice: ').lower().strip()
 							print("-"*50)
 							if psw_choice == 'ep':
 								print(" ")
