@@ -95,7 +95,7 @@ class TestCredentials(unittest.TestCase):
         self.new_credential.save_credentials()
         twitter = Credential('Gitau', 'Twitter', 'works', 'kamikaze99')
         twitter.save_credentials()
-        gmail = Credential('Gitau', 'Gmail', 'send', 'pswd200')
+        gmail = Credential('Gitau', 'Gmail', 'send', 'kamikaze99')
         gmail.save_credentials()
         self.assertEqual(
             len(Credential.display_credentials(twitter.user_name)), 3)
