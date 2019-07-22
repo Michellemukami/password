@@ -127,7 +127,7 @@ def main():
 							print(' ')	
 						else:
 							print(' ')
-							print("You don't seem to have any credentials saved yet")
+							print("You seem not to have saved credentials")
 							print(' ')
 					elif short_code == 'copy':
 						print(' ')
