@@ -80,7 +80,7 @@ def main():
 			user_exists = verify_user(user_name,password)
 			if user_exists == user_name:
 				print(" ")
-				print(f'Welcome {user_name}. Please choose to continue.')
+				print(f'Welcome {user_name}. Please choose to continue with us.')
 				print(' ')
 				while True:
 					print("-"*50)
