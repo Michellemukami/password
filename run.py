@@ -120,7 +120,7 @@ def main():
 					elif short_code == 'dc':
 						print(' ')
 						if display_credentials(user_name):
-							print('Here is a list of all your credentials')
+							print(' A display of all your credentials')
 							print(' ')
 							for credential in display_credentials(user_name):
 								print(f'Site Name: {credential.site_name} - Account Name: {credential.account_name} - Password: {credential.password}')
