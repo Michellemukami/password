@@ -105,8 +105,8 @@ class TestCredentials(unittest.TestCase):
             test_delete_credentials to test if we can remove a credential
             '''
             self.new_credential.save_credentials()
-            test_credential = Credential("'Gitau', 'Twitter', 'works', 'kamikaze99'") # new credential
-            test_credential.save_credential()
+            test_credential = Credential('Gitau', 'Linkin', 'test', 'kamikaze99') # new credential
+            test_credential.save_credentials()
 
             self.new_credential.delete_credential()# Deleting a credential
             self.assertEqual(len(Credential.credentials_list),1)
