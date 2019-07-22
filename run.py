@@ -129,12 +129,12 @@ def main():
 							print(' ')
 							print("You seem not to have saved credentials")
 							print(' ')
-					elif short_code == 'copy':
-						print(' ')
-						chosen_site = input('Enter the site name for the credential password to copy: ')
-						copy_credential(chosen_site)
-						print('')
-					else:
+					# elif short_code == 'copy':
+					# 	print(' ')
+					# 	chosen_site = input('Enter the site name for the credential password to copy: ')
+					# 	copy_credential(chosen_site)
+					# 	print('')
+					  elif:  
 						print('Sorry!.Kindly Try again.')
 
 			else: 
