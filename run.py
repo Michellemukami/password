@@ -135,11 +135,11 @@ def main():
 						copy_credential(chosen_site)
 						print('')
 					else:
-						print('Oops! Wrong option entered. Try again.')
+						print('Sorry!.Kindly Try again..')
 
 			else: 
 				print(' ')
-				print('Oops! Wrong details entered. Try again or Create an Account.')		
+				print('Try again or Create an Account.')		
 		
 		else:
 			print("-"*60)
