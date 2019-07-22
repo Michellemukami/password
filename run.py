@@ -94,8 +94,8 @@ def main():
 					elif short_code == 'cc':
 						print(' ')
 						print('Enter your credential information:')
-						site_name = input('Enter the site\'s name- ').strip()
-						account_name = input('Enter your account\'s name - ').strip()
+						site_name = input('Enter site\'s name- ').strip()
+						account_name = input('Enter account\'s name - ').strip()
 						while True:
 							print(' ')
 							print("-"*50)
