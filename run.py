@@ -135,12 +135,13 @@ def main():
 							print("You seem not to have saved credentials")
 							print(' ')
 			
-                    elif short_code == 'del':
-                        print("Enter name of account to be deleted")
-                        chosen_site = input()
-                        delete_credentails(chosen_site)
-                            print(f"{credential.site_name} account credentials have been successfully deleted")	
-		
+                    # elif short_code == 'del':  
+                    #     print(' ')
+                    #     chosen_site = input("Enter name of account to be deleted")
+                    #     delete_credentails(chosen_site)
+                    #     print(f"{credential.site_name} account credentials have been successfully deleted")	
+
+
 		else:
 			print("-"*50)
 			print(' ')
