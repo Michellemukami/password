@@ -75,8 +75,8 @@ def main():
 			print("-"*50)
 			print(' ')
 			print('In order to login, enter your account information kindly:')
-			user_name = input('Enter your first name - ').strip()
-			password = str(input('Enter your password - '))
+			user_name = input('Enter first name - ').strip()
+			password = str(input('Enter password - '))
 			user_exists = verify_user(user_name,password)
 			if user_exists == user_name:
 				print(" ")
