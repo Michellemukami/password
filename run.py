@@ -57,16 +57,16 @@ def display_credentials(user_name):
 	
 def main():
 	print(' ')
-	print('Welcome to Password_Locker.')
+	print('Welcome to Password_Locker!.')
 	while True:
 		print(' ')
 		print("-"*50)
-		print('Use these codes to navigate: \n ca-Create Account today! \n li-Log In \n ex-Exit')
+		print('Use these codes to navigate: \n a-Create Account today! \n b-Log In \n x-Exit')
 		short_code = input('Your choice: ').lower().strip()
-		if short_code == 'ex':
+		if short_code == 'x':
 			break
 
-		elif short_code == 'ca':
+		elif short_code == 'a':
 			print("-"*50)
 			print(' ')
 			print('Make a new account?:')
@@ -76,7 +76,7 @@ def main():
 			save_user(create_user(first_name,last_name,password))
 			print(" ")
 			print(f'New Account for: {first_name} {last_name} with the password: {password}')
-		elif short_code == 'li':
+		elif short_code == 'b':
 			print("-"*50)
 			print(' ')
 			print('In order to login, enter your account information kindly:')
@@ -89,14 +89,14 @@ def main():
 				print(' ')
 				while True:
 					print("-"*50)
-					print('Navigation codes: \n cc-Create a Credential \n dc-Display Credentials \n del-delete credentials \n ex-Exit')
+					print('Navigation codes: \n c-Create a Credential \n d-Display Credentials \n del-delete credentials \n x-Exit')
 					short_code = input('Your choice?: ').lower().strip()
 					print("-"*50)
-					if short_code == 'ex':
+					if short_code == 'x':
 						print(" ")
 						print(f'lovely day! {user_name}')
 						break
-					elif short_code == 'cc':
+					elif short_code == 'c':
 						print(' ')
 						print('Enter your credential information:')
 						site_name = input('Enter site\'s name- ').strip()
@@ -104,17 +104,17 @@ def main():
 						while True:
 							print(' ')
 							print("-"*50)
-							print('Kindly note that this are the options for your password: \n ep-enter existing password \n gp-generate a password \n ex-exit')
+							print('Kindly note that this are the options for your password: \n p-enter existing password \n g-generate a password \n x-exit')
 							psw_choice = input('Your choice?: ').lower().strip()
 							print("-"*50)
-							if psw_choice == 'ep':
+							if psw_choice == 'p':
 								print(" ")
 								password = input('Your password kindly?: ').strip()
 								break
-							elif psw_choice == 'gp':
+							elif psw_choice == 'g':
 								password = generate_password()
 								break
-							elif psw_choice == 'ex':
+							elif psw_choice == 'x':
 								break
 							else:
 								print('Sorry!.Kindly Try again.')
@@ -122,7 +122,7 @@ def main():
 						print(' ')
 						print(f'Credential Created: Site Name: {site_name} - Account Name: {account_name} - Password: {password}')
 						print(' ')
-					elif short_code == 'dc':
+					elif short_code == 'd':
 						print(' ')
 						if display_credentials(user_name):
 							print(' A display of all your credentials')
