@@ -142,9 +142,9 @@ def main():
 				print('Try again or Create an Account.')		
 		
 		else:
-			print("-"*60)
+			print("-"*50)
 			print(' ')
-			print('Oops! Wrong option entered. Try again.')
+			print('Sorry!.Kindly Try again..')
 				
 
 
