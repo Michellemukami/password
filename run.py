@@ -104,7 +104,7 @@ def main():
 							print("-"*50)
 							if psw_choice == 'ep':
 								print(" ")
-								password = input('Enter your password: ').strip()
+								password = input('Your password kindly?: ').strip()
 								break
 							elif psw_choice == 'gp':
 								password = generate_password()
