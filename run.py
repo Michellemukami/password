@@ -100,7 +100,7 @@ def main():
 							print(' ')
 							print("-"*50)
 							print('Kindly note that this are the options for your password: \n ep-enter existing password \n gp-generate a password \n ex-exit')
-							psw_choice = input('Your choice: ').lower().strip()
+							psw_choice = input('Your choice?: ').lower().strip()
 							print("-"*50)
 							if psw_choice == 'ep':
 								print(" ")
