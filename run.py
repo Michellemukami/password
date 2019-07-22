@@ -137,11 +137,9 @@ def main():
 			
                     elif short_code == 'del':
                         print("Enter name of account to be deleted")
-                        deli_user = input()
-                        if check_existing_user(deli_user):
-                            search_account = find_user(deli_user)
-                            del_user(search_account)
-                            print(f"{search_account.account} account credentials have been successfully deleted")	
+                        chosen_site = input()
+                        delete_credentails(chosen_site)
+                            print(f"{credential.site_name} account credentials have been successfully deleted")	
 		
 		else:
 			print("-"*50)
