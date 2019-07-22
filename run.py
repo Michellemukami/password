@@ -70,11 +70,11 @@ def main():
 			password = input('Enter password - ').strip()
 			save_user(create_user(first_name,last_name,password))
 			print(" ")
-			print(f'New Account Created for: {first_name} {last_name} with the password: {password}')
+			print(f'New Account for: {first_name} {last_name} with the password: {password}')
 		elif short_code == 'li':
 			print("-"*50)
 			print(' ')
-			print('To login, enter your account details:')
+			print('In order to login, enter your account details:')
 			user_name = input('Enter your first name - ').strip()
 			password = str(input('Enter your password - '))
 			user_exists = verify_user(user_name,password)
