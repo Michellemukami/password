@@ -100,16 +100,16 @@ class TestCredentials(unittest.TestCase):
         self.assertEqual(
             len(Credential.display_credentials(twitter.user_name)), 3)
 
-    # def test_find_by_site_name(self):
-    #     '''
-    #     Test to check if the find_by_site_name method returns the correct credential
-    #     '''
-    #     self.new_credential.save_credentials()
-    #     twitter = Credential('Gitau', 'Twitter', 'works', 'kamikaze99')
-    #     twitter.save_credentials()
-    #     credential_exists = Credential.find_by_site_name('Twitter')
-    #     self.assertEqual(credential_exists, twitter)
+    def test_delete_credentials(self):
+            '''
+            test_delete_credentials to test if we can remove a credential
+            '''
+            self.new_contact.save_contact()
+            test_contact = Contact("Test","user","0712345678","test@user.com") # new contact
+            test_contact.save_contact()
 
+            self.new_contact.delete_contact()# Deleting a contact object
+            self.assertEqual(len(Contact.contact_list),1)
 
 if __name__ == '__main__':
     unittest.main()
