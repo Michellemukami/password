@@ -74,7 +74,7 @@ def main():
 		elif short_code == 'li':
 			print("-"*50)
 			print(' ')
-			print('In order to login, enter your account information:')
+			print('In order to login, enter your account information kindly:')
 			user_name = input('Enter your first name - ').strip()
 			password = str(input('Enter your password - '))
 			user_exists = verify_user(user_name,password)
