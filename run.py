@@ -20,7 +20,7 @@ def del_credential(contact):
     '''
     Function to delete a credential
     '''
-    credential.delete_credentail()
+    credential.delete_credentails()
 
 def verify_user(first_name,password):
 	'''

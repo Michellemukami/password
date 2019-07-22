@@ -108,7 +108,7 @@ class TestCredentials(unittest.TestCase):
             test_credential = Credential('Gitau', 'Linkin', 'test', 'kamikaze99') # new credential
             test_credential.save_credentials()
 
-            self.new_credential.delete_credential()# Deleting a credential
+            self.new_credential.delete_credentials()# Deleting a credential
             self.assertEqual(len(Credential.credentials_list),1)
 
 if __name__ == '__main__':
