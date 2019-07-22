@@ -89,7 +89,7 @@ def main():
 				print(' ')
 				while True:
 					print("-"*50)
-					print('Navigation codes: \n cc-Create a Credential \n dc-Display Credentials \n copy-Copy Password \n ex-Exit')
+					print('Navigation codes: \n cc-Create a Credential \n dc-Display Credentials \n del-delete credentials \n ex-Exit')
 					short_code = input('Your choice?: ').lower().strip()
 					print("-"*50)
 					if short_code == 'ex':
@@ -134,9 +134,14 @@ def main():
 							print(' ')
 							print("You seem not to have saved credentials")
 							print(' ')
-			else: 
-				print(' ')
-				print('Try again or Create an Account.')		
+			
+                    elif short_code == 'del':
+                        print("Enter name of account to be deleted")
+                        deli_user = input()
+                        if check_existing_user(deli_user):
+                            search_account = find_user(deli_user)
+                            del_user(search_account)
+                            print(f"{search_account.account} account credentials have been successfully deleted")	
 		
 		else:
 			print("-"*50)
