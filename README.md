@@ -10,12 +10,11 @@ Password_Locker is a terminal run python application that allows users to store 
 | Behavior | Input | Output |
 | :---------------- | :---------------: | ------------------: |
 | Display codes for navigation | **In terminal: $./locker.py** | Welcome, choose an option: ca-Create Account, li-Log In, ex-Exit |
-| Display prompt for creating an account | **Enter: A** | Enter your first name, last name and password |
-| Display prompt for login in | **Enter: B** | Enter your account name and password |
+| Display prompt for creating an account | **Enter: a** | Enter your first name, last name and password |
+| Display prompt for login in | **Enter: b** | Enter your account name and password |
 | Display codes for navigation | **Successful login** | Choose an option: C - Create Credential, D - Display Credentials, X- exit |
-| Display prompt for creating a credential | **Enter: C** | Enter the site name, your username and password |
-| Display a list of credentials | **Enter: D** | Prints a list of saved credentials |
-| Display prompt for which credential to copy | **Enter: V** | Enter the site name of the credential you wish to copy. |
+| Display prompt for creating a credential | **Enter: c** | Enter the site name, your username and password |
+| Display a list of credentials | **Enter: d** | Prints a list of saved credentials |
 | Exit application | **Enter: X** | Exit the current navigation stage |
 
 ## SetUp 
